@@ -1,0 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: Arial, sans-serif;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  font-size: 100%; }
+
+.wrapper {
+  max-width: 75em;
+  margin: 1em auto;
+  border: 2px solid #000000; }
+
+header.main {
+  display: flex;
+  border-bottom: #E12E22 5px solid;
+  padding: 0 2em 1em 0;
+  margin: 2em 0 1em 2em; }
+  header.main h1 {
+    align-self: flex-start; }
+  header.main time {
+    align-self: flex-end;
+    flex: 1 0;
+    text-align: right;
+    font-size: 1.5rem; }
+
+h1 {
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+  font-size: 3rem; }
+
+/*=== Card Template Styles ===*/
+main {
+  display: flex;
+  min-height: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 2em 0 0 2em; }
+  main.error {
+    margin-bottom: 2em;
+    font-size: 2rem;
+    color: red; }
+
+.card-wrapper {
+  display: flex;
+  padding: 0 2em 2em 0;
+  flex-basis: 50%;
+  flex-direction: column; }
+  .card-wrapper header {
+    background: #E12E22;
+    max-width: 75%;
+    padding: 0.5em;
+    color: #FFFFFF; }
+  .card-wrapper .card-body {
+    padding: 1em;
+    border: 2px solid #E12E22;
+    line-height: 1.5; }
+    .card-wrapper .card-body h2 {
+      font-weight: 700;
+      font-size: 1.25rem; }
+
+/*=== Spinner for bad internet connections ===*/
+.spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative; }
+
+.cube1, .cube2 {
+  background-color: #333;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+  animation: sk-cubemove 1.8s infinite ease-in-out; }
+
+.cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s; }
+
+@-webkit-keyframes sk-cubemove {
+  25% {
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5); }
+  50% {
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg); }
+  75% {
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5); }
+  100% {
+    -webkit-transform: rotate(-360deg); } }
+@keyframes sk-cubemove {
+  25% {
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5); }
+  50% {
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg); }
+  50.1% {
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg); }
+  75% {
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5); }
+  100% {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg); } }
+/*=== Responsive Breakpoints ===*/
+@media (max-width: 77em) {
+  .wrapper {
+    margin: 1em; } }
+@media (max-width: 48em) {
+  h1 {
+    font-size: 2rem;
+    line-height: 1.5; }
+
+  header.main time {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 0.25em; }
+
+  .card-wrapper {
+    flex-basis: 100%; } }
+@media (max-width: 40em) {
+  html, body {
+    font-size: 90%; } }
+
+/*# sourceMappingURL=style.css.map */

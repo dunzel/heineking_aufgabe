@@ -1,0 +1,30 @@
+/*=== Responsive Breakpoints ===*/
+@media (max-width: 38.5 * $space) { //by 32px root = 1232px
+  .wrapper {
+    margin: $space / 2;
+  }
+}
+
+@media (max-width: 24 * $space) { //by 32px root = 768px
+  h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  header.main time {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 0.25em;
+  }
+
+  //now one column
+  .card-wrapper {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 20 * $space) { //by 32px root = 640px
+  html, body {
+    font-size: 90%;
+  }
+}

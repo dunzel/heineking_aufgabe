@@ -1,0 +1,39 @@
+/*=== Card Template Styles ===*/
+main {
+  display: flex;
+  min-height: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: $space 0 0 $space;
+
+  &.error {
+    margin-bottom: $space;
+    font-size: 2rem;
+    color: red;
+  }
+}
+
+.card-wrapper {
+  display: flex;
+  padding: 0 $space $space 0;
+  flex-basis: 50%; //two columns
+  flex-direction: column;
+
+  header {
+    background: $primary-color;
+    max-width: 75%;
+    padding: $space / 4;
+    color: #FFFFFF;
+  }
+
+  .card-body {
+    padding: ($space / 2);
+    border: 2px solid $primary-color;
+    line-height: 1.5;
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+  }
+}
