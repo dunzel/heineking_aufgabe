@@ -1,7 +1,7 @@
 # Apotheken Notfall Template
 
 Dieses Template wurde mit [react](https://github.com/facebook/react) erstellt. <br>
-Eine live Vorschau gibt es unter [http://heinking.dunzel.io/build](http://heinking.dunzel.io/build).<br>
+Eine live Vorschau gibt es unter [http://heinking.dunzel.io/build](http://heineking.dunzel.io/build).<br>
 Den Code kann man hier clonen: [zugehöriges Repo](https://github.com/dunzel/heineking_aufgabe/)<br>
 
 ## App starten
