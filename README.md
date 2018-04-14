@@ -14,4 +14,4 @@ Alles (bis auf die registerServiceWorker.js) im */src* Ordner ist von mir selbst
 
 ## Externe Libraries
 Als zusätzliche Technologien zur Unterstützung habe ich die XHR Bibliothek [axios](https://www.npmjs.com/package/axios) genommen 
-und für das prasen der XML Daten [xml-to-json-promise](https://www.npmjs.com/package/xml-to-json-promise) genutzt
+und für das parsen der XML Daten [xml-to-json-promise](https://www.npmjs.com/package/xml-to-json-promise) genutzt
